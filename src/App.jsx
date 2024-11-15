@@ -71,3 +71,5 @@ const addProduct = (newProduct) => {
 }
 
 export default App
+// Set up App component with initial product list
+

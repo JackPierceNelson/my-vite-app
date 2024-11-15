@@ -28,3 +28,4 @@ function ProductList({ products }) {
 // Export the ProductList component as the default export
 export default ProductList;
 // Create ProductList component to render each ProductItem
+// Implement keys for each ProductItem in ProductList

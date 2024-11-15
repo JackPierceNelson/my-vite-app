@@ -36,7 +36,15 @@ function App() {
 // An addProduct function will be passed to the AddProductForm component
 // This function adds a new product to the products array
 const addProduct = (newProduct) => {
-  setProducts([...products, { ...newProduct, id: Date.now() }]);
+  // Generate a new ID
+  const newId = Math.max(...products.map(p => p.id), 0) + 1;
+    
+  // Create a new product object with the generated ID
+  const productToAdd = { ...newProduct, id: newId };
+ 
+  setProducts([...products, productToAdd ]);
+ // Render a heading, and other components to the fuction and array as a prop
+  // setProducts([...products, { ...newProduct, id: Date.now() }]);
 };
 
   return (
@@ -72,4 +80,4 @@ const addProduct = (newProduct) => {
 
 export default App
 // Set up App component with initial product list
-
+// Implement addProduct function and pass data between App and AddProductForm

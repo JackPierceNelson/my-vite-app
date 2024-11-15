@@ -75,3 +75,5 @@ function AddProductForm({ onAddProduct }) {
 // This sets up the AddProductForm component, allowing users to input new product details and add them to the list
 // The form uses state to manage its inputs and communicates with the App component to add new products to the main list
 export default AddProductForm;
+
+// Create AddProductForm component with form fields

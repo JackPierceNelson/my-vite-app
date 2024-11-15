@@ -16,3 +16,4 @@ function ProductItem({ product }) {
 }
 // Export the ProductItem component as the default export
 export default ProductItem;
+// Create ProductItem component to display individual product details
